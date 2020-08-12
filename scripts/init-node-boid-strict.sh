@@ -69,7 +69,4 @@ passwd -dl root
 # Switch User
 # su - $USER
 
-# Logout user
-logout
-
 exit 0

@@ -84,7 +84,4 @@ sh -c "curl -L https://raw.githubusercontent.com/docker/compose/${COMPOSE_VERSIO
 # Switch User
 # su - $USER
 
-# Logout user
-logout
-
 exit 0
