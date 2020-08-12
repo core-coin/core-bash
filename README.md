@@ -28,4 +28,8 @@ You can use different levels of script files.
   <dd>Extended security with Docker</dd>
   <dt>install-docker.sh</dt>
   <dd>Self-standing Docker installation script</dd>
+  <dt>run-gocore.sh</dt>
+  <dd>Gocore script for running the Core network</dd>
+  <dt>run-gocore-miner.sh</dt>
+  <dd>Gocore script for running the Core network with miner</dd>
 </dl>
