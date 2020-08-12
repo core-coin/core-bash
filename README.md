@@ -10,7 +10,7 @@ We provide Initialization scripts for Nodes. You can prepare your server while i
 ## Execution directly from a URL
 
 ```shell
-bash <(curl -Ls https://raw.githubusercontent.com/core-coin/server-init/master/scripts/init-node-boid-docker.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/core-coin/server-init/master/scripts/ubuntu/init-node-boid-docker.sh)
 ```
 
 ## Scripts versions
