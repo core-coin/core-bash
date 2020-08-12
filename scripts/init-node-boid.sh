@@ -39,7 +39,4 @@ echo $LOGO > $MOTD_LOC
 # Restart SSH
 systemctl restart sshd
 
-# Logout user
-logout
-
 exit 0
