@@ -7,6 +7,10 @@ We provide Initialization scripts for Nodes. You can prepare your server while i
 - [Ubuntu 20.04 LTS (Focal Fossa)](https://releases.ubuntu.com/20.04/)
 - [Ubuntu 18.04 LTS (Bionic Beaver)](https://releases.ubuntu.com/18.04/)
 
+## Warning
+
+Executing initialization scripts will change your SSH access due to the security policy used. Please, make sure you are using your SSH key properly on the server and test it before running the script!
+
 ## Execution directly from a URL
 
 ```shell
