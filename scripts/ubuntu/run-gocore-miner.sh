@@ -11,11 +11,13 @@ docker pull docker.pkg.github.com/core-coin/go-core/gocore:v1.0.1-dev
 containerName="gocore-$1"
 # Gocore account password
 accountPass=$2
+# Miner threads
+minerThreads=$3
 
 # Run container based on downloaded image
 docker run -d --name "$containerName" --net=host docker.pkg.github.com/core-coin/go-core/gocore:v1.0.1-dev --networkid "$1"
 sleep 2
 # Create account and start mining
-docker exec -it "$containerName" gocore --exec "personal.newAccount(\"$accountPass\"); miner.start(1)" attach /testdata/gocore.ipc
+docker exec -it "$containerName" gocore --exec "personal.newAccount(\"$accountPass\"); miner.start($minerThreads)" attach /testdata/gocore.ipc
 # Show logs of running node
 docker logs -f "$containerName"
