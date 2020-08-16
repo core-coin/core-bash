@@ -5,7 +5,7 @@
 cat ./access_token.txt | docker login https://docker.pkg.github.com/ -u error2215 --password-stdin
 
 # Download image from github
-docker pull docker.pkg.github.com/core-coin/go-core/gocore:v1.0.1-dev
+docker pull docker.pkg.github.com/core-coin/go-core/gocore:latest
 
 # Docker contaniner name
 containerName="gocore-$1"
@@ -13,7 +13,7 @@ containerName="gocore-$1"
 accountPass=$2
 
 # Run container based on downloaded image
-docker run -d --name "$containerName" --net=host docker.pkg.github.com/core-coin/go-core/gocore:v1.0.1-dev --networkid "$1"
+docker run -d --name "$containerName" --net=host docker.pkg.github.com/core-coin/go-core/gocore:latest --networkid "$1"
 sleep 2
 # Create account and start mining
 docker exec -it "$containerName" gocore --exec "personal.newAccount(\"$accountPass\"); miner.start(1)" attach /testdata/gocore.ipc
