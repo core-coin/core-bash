@@ -2,19 +2,19 @@
 
 SSHD_LOC=/etc/ssh/sshd_config
 MOTD_LOC=/etc/motd
-LOGO="┏━┳━┳━┳━┓┏━┳┓╋╋┏┓\
-┃┏┫┃┃╋┃┳┛┃┃┃┣━┳┛┣━┓\
-┃┗┫┃┃┓┫┻┓┃┃┃┃╋┃╋┃┻┫\
-┗━┻━┻┻┻━┛┗┻━┻━┻━┻━┛\
-══════════════════════════════════════════════════\
-TYPE: Node //Boid//\
-OS: $(lsb_release -d | cut -f2-)\
-IP: $(hostname -I)\
-INIT: $(date +"%Y-%m-%dT%H:%M:%SZ")\
-══════════════════════════════════════════════════\
-Notice: This server is for authorized use only.\
-By continuing, you agree to the Security policy\
-of CORE FOUNDATION, nadacia.\
+LOGO="┏━┳━┳━┳━┓┏━┳┓╋╋┏┓
+┃┏┫┃┃╋┃┳┛┃┃┃┣━┳┛┣━┓
+┃┗┫┃┃┓┫┻┓┃┃┃┃╋┃╋┃┻┫
+┗━┻━┻┻┻━┛┗┻━┻━┻━┻━┛
+══════════════════════════════════════════════════
+TYPE: Node //Boid//
+OS: $(lsb_release -d | cut -f2-)
+IP: $(hostname -I)
+INIT: $(date +"%Y-%m-%dT%H:%M:%SZ")
+══════════════════════════════════════════════════
+Notice: This server is for authorized use only.
+By continuing, you agree to the Security policy
+of CORE FOUNDATION, nadacia.
 ══════════════════════════════════════════════════"
 
 # No root login with password (prohibit-password)
