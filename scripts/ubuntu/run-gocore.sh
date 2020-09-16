@@ -13,7 +13,7 @@ docker pull docker.pkg.github.com/core-coin/go-core/gocore:latest
 containerName="gocore-$1"
 
 # Run container based on downloaded image
-docker run -d --name "$containerName" --net=host docker.pkg.github.com/core-coin/go-core/gocore:latest --$1 --nat=auto
+docker run -d --name "$containerName" --net=host docker.pkg.github.com/core-coin/go-core/gocore:latest --$1
 
 # Show logs of running node
 docker logs -f "$containerName"
