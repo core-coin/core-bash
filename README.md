@@ -14,7 +14,7 @@ Executing initialization scripts will change your SSH access due to the security
 ## Execution directly from a URL
 
 ```shell
-bash <(curl -Ls https://raw.githubusercontent.com/core-coin/server-init/master/scripts/ubuntu/init-node-boid-docker.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/core-coin/core-bash/master/scripts/ubuntu/init-node-boid-docker.sh)
 ```
 
 ## Scripts versions
