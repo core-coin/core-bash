@@ -1,6 +1,6 @@
 # Server Initialization Scripts for Nodes
 
-We provide Initialization scripts for Nodes. You can prepare your server while installation from provider.
+We provide Initialization scripts for Nodes. You can prepare your server while installing from the provider.
 
 ## Tested systems
 
@@ -37,3 +37,7 @@ You can use different levels of script files.
   <dt>run-gocore-miner.sh</dt>
   <dd>Gocore script for running the Core network with miner</dd>
 </dl>
+
+## License
+
+[CORE License](https://github.com/cryptohub-digital/core-license/blob/master/LICENSE)
